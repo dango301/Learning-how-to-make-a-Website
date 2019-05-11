@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "most-visible": "^1.4.0"
+  }
+}
