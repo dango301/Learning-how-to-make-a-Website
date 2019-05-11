@@ -8,3 +8,4 @@ Zur Betrachtung sind nur folgende Dateien interessant:
 ./styles/main.scss
 
 Alle anderen Dateien sind schlecht lesbar, da sie kompilliert wurden.
+Die Seite ist unter https://dango301.github.io/if83/ als Website verfügbar.
