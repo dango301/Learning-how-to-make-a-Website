@@ -289,13 +289,11 @@ var __importDefault = this && this.__importDefault || function (mod) {
 
 exports.__esModule = true;
 
-var most_visible_1 = __importDefault(require("most-visible")); //#region [ rgba(0, 0, 255, 0.1) ] reusable functions
-
+var most_visible_1 = __importDefault(require("most-visible"));
 
 function classToggle(element, className, enable) {
   if (enable) element.classList.add(className);else element.classList.remove(className);
-} //#endregion
-
+}
 
 var nav = document.getElementsByTagName('nav')[0],
     trigger = document.getElementById('navBreakpoint'),
@@ -303,9 +301,9 @@ var nav = document.getElementsByTagName('nav')[0],
 
 function scrollNav() {
   var yPos = trigger.getBoundingClientRect().top,
-      activeEl = most_visible_1["default"](langs),
-      navSections = document.querySelectorAll('nav.stick .bar');
+      activeEl = most_visible_1["default"](langs);
   classToggle(nav, 'stick', yPos <= 0);
+  var navSections = document.querySelectorAll('nav.stick .bar'); // get navSections every time to see if navbar is stuck
 
   for (var i = 0; i < navSections.length; i++) {
     if (langs[i] == activeEl) navSections[i].classList.add('active');else navSections[i].classList.remove('active');
@@ -325,7 +323,6 @@ learnCards.forEach(function (btn) {
 }); // onload-setup at the end here:
 
 window.onscroll = scrollNav;
-scrollNav();
 },{"most-visible":"node_modules/most-visible/dist/most-visible.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -354,7 +351,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57822" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54412" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

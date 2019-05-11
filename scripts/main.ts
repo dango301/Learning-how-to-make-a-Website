@@ -1,12 +1,9 @@
 import mostVisible from 'most-visible';
 
-
-//#region [ rgba(0, 0, 255, 0.1) ] reusable functions
 function classToggle(element: Element, className: string, enable: boolean) {
   if (enable) element.classList.add(className);
   else element.classList.remove(className);
 }
-//#endregion
 
 
 const nav = document.getElementsByTagName('nav')[0],
@@ -16,10 +13,12 @@ const nav = document.getElementsByTagName('nav')[0],
 function scrollNav() {
 
   const yPos = trigger.getBoundingClientRect().top,
-    activeEl = mostVisible(langs),
-    navSections = document.querySelectorAll('nav.stick .bar');
+    activeEl = mostVisible(langs);
 
   classToggle(nav, 'stick', yPos <= 0);
+  const navSections = document.querySelectorAll('nav.stick .bar');
+  // get navSections every time to see if navbar is stuck
+
   for (let i = 0; i < navSections.length; i++) {
     if (langs[i] == activeEl) navSections[i].classList.add('active');
     else navSections[i].classList.remove('active');
@@ -33,4 +32,3 @@ learnCards.forEach(btn => btn.addEventListener('mouseleave', () => btn.parentEle
 
 // onload-setup at the end here:
 window.onscroll = scrollNav;
-scrollNav();

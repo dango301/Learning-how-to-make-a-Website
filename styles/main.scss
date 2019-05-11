@@ -31,6 +31,7 @@ $softblack: rgb(33, 33, 33);
   text-shadow: 1.25px 1.25px 2px black;
 }
 
+html,
 body {
   padding: 0;
   margin: 0;
@@ -38,8 +39,8 @@ body {
   background-size: 1000px;
   font-family: Montserrat, sans-serif;
   scroll-behavior: smooth;
-  height: 100vh;
-  overflow-y: scroll;
+  // height: 100vh;
+  // overflow-y: scroll;
   scroll-snap-type: y proximity;
   scroll-padding-top: $navHeight;
 }
@@ -192,7 +193,7 @@ nav {
   @include bannerBg('abstract', 0.2, bottom);
 
   .item {
-    max-width: 525px;
+    max-width: 700px;
   }
 }
 #functional {

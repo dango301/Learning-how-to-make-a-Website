@@ -10,6 +10,7 @@
   text-shadow: 1.25px 1.25px 2px black;
 }
 
+html,
 body {
   padding: 0;
   margin: 0;
@@ -17,8 +18,6 @@ body {
   background-size: 1000px;
   font-family: Montserrat, sans-serif;
   scroll-behavior: smooth;
-  height: 100vh;
-  overflow-y: scroll;
   -ms-scroll-snap-type: y proximity;
       scroll-snap-type: y proximity;
   scroll-padding-top: 65px;
@@ -238,7 +237,7 @@ nav.stick .styling {
 }
 
 #styling .item {
-  max-width: 525px;
+  max-width: 700px;
 }
 
 #functional {
