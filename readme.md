@@ -7,4 +7,4 @@ Zur Betrachtung sind nur folgende Dateien interessant:
 ./scripts/main.ts
 ./styles/main.scss
 
-Alle anderen Dateien sind schlecht lesbar, da sie in für Browser lesbare Dokumente kompilliert wurden.
+Alle anderen Dateien sind schlecht lesbar, da sie kompilliert wurden.
